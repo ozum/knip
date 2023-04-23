@@ -16,7 +16,6 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
-          - windows-latest
         node:
           - 16
           - 18
@@ -35,4 +34,4 @@ jobs:
       - run: npm run build
       - run: npm run knip
       - run: npm run knip:production
-      - run: npm test
+      - run: npm run test:swc
