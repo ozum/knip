@@ -28,7 +28,7 @@ const requireExportedShorthandsHeuristic = (value: string) => {
   const { identifier, identifier2 } = require('./dir/mod3');
 };
 
-const staticResolve = () => {
+const staticResolver = () => {
   return require.resolve('string-literal-resolve');
 };
 

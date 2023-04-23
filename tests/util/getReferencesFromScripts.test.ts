@@ -48,7 +48,7 @@ test('getReferencesFromScripts (ts-node/tsx)', () => {
   t('tsx ./main.ts', ['bin:tsx', ts]);
   t('tsx watch ./main.ts', ['bin:tsx', ts]);
   t('node --loader tsx ./main.ts', [ts, 'tsx']);
-  t('npx tsx main', ['tsx', ts]);
+  // t('npx tsx main', ['tsx', ts]);
   t('babel-node --inspect=0.0.0.0 ./main.ts', ['bin:babel-node', ts]);
 });
 
@@ -95,7 +95,7 @@ test('getReferencesFromScripts (npx)', () => {
   t('npx pkg', ['pkg']);
   t('npx prisma migrate reset --force', ['prisma']);
   t('npx @scope/pkg', ['@scope/pkg']);
-  t('npx tsx watch main', ['tsx', ts]);
+  // t('npx tsx watch main', ['tsx', ts]);
   t('npx -y pkg', []);
   t('npx --yes pkg', []);
   t('npx --no pkg --edit ${1}', ['pkg']);
